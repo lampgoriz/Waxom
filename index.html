@@ -2,54 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wexom</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-with, initial-scale=1">
+    <title>Waxom</title>
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="img/icon/style.css">
 </head>
 <body>
 
 <!--HEADER-->
-
-    <header class="header">
+    <header class="header " id="header"> <!--header__fixed header__fixed-active-->
+        <a id="home"></a>
         <div class="container">
-            <div class="header__inner">
-                <div class="logo"><img src="img/logo.png" alt=""></div>
-                <nav class="nav">
+            <div class="header__inner" >
+                <div class="header__logo">
+                    <a href="#"><img class="logo" src="img/logo.png" alt=""></a>
+                </div>
+                <nav class="nav" id="nav">
                     <a class="nav__link" href="#">Home</a>
-                    <a class="nav__link" href="#">About us</a>
-                    <a class="nav__link" href="#">Portfolio</a>
-                    <a class="nav__link" href="#">Features</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Pricing</a>
-                    <a class="nav__link" href="#">Shortcodes</a>
-                    <a class="nav__link" href="#">Contact</a>
+                    <a class="nav__link" href="#about">About us</a>
+                    <a class="nav__link" href="#portfolio">Portfolio</a>
+                    <a class="nav__link" href="#features">Features</a>
+                    <a class="nav__link" href="#blog" >Blog</a> <a class="nav__link" href="#contact">Contact</a>
                     <span class="icon-shopping-bag header__icon"></span>
                     <span class="icon icon-search header__icon"></span>
                 </nav>
+                <button class="nav-toggle" type="button" id="nav-toggle">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
             </div>
         </div>
     </header>
 
-    <div class="intro">
-        <div class="container">
-            <div class="intro__inner">
-                <h2 class="intro__suptile">Unique and Modern Design</h2>
-                <h1 class="intro__title">Portfolio PSD Template</h1>
-                <p class="intro__subtitle">Lorem ipsum dolor sit amet,                      consectetur adipisicing elit. Aut dolor
-                    doloremque harum ipsa laboriosam necessitatibus nemo</p>
-                <a href="#" class="inner__btn">get started</a>
+    <div class="intro" id="intro">
+        <div id="slider">
+            <button id="prevButton" class="slider__button slider__button-prev"> <span> < </span> </button>
+            <button id="nextButton" class="slider__button slider__button-next"> > </button>
+            <div class="container">
+                <div class="intro__inner">
+                    <h2 class="intro__suptile">Unique and Modern Design</h2>
+                    <h1 class="intro__title">Portfolio PSD Template</h1>
+                    <p class="intro__subtitle">Lorem ipsum dolor sit amet,                      consectetur adipisicing elit. Aut dolor
+                        doloremque harum ipsa laboriosam necessitatibus nemo</p>
+                    <a href="#" class="inner__btn">get started</a>
+                </div>
             </div>
+        </div>
+        <div class="slider__dots">
+            <span class="slider__dot active__dot">.</span>
+            <span class="slider__dot">.</span>
+            <span class="slider__dot">.</span>
         </div>
     </div>
 
 <!--SERVICES-->
 
-<section class="section">
+<section class="section" id="services">
+    <a id="about"></a>
     <div class="container services">
         <div class="card">
             <span class="icon icon-pencil2 services__icon"></span>
             <h3 class="services__title">Web & App Design</h3>
-            <p class="services__text">Lorem ipsum dolor sit amet,                       consectetur adipisicing elit. Consectetur eligendi est
+            <p class="services__text">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Consectetur eligendi est
                 explicabo nam
                 officiis, pariatur quae quo quos sapiente </p>
         </div>
@@ -57,7 +70,7 @@
         <div class="card">
             <span class="icon icon-stack services__icon"></span>
             <h3 class="services__title">Web & App Design</h3>
-            <p class="services__text">Lorem ipsum dolor sit amet,                       consectetur adipisicing elit. Consectetur eligendi est
+            <p class="services__text">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Consectetur eligendi est
                 explicabo nam
                 officiis, pariatur quae quo quos sapiente </p>
         </div>
@@ -65,7 +78,7 @@
         <div class="card">
             <span class="icon icon-cog services__icon"></span>
             <h3 class="services__title">Web & App Design</h3>
-            <p class="services__text">Lorem ipsum dolor sit amet,                       consectetur adipisicing elit. Consectetur eligendi est
+            <p class="services__text">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Consectetur eligendi est
                 explicabo nam
                 officiis, pariatur quae quo quos sapiente </p>
         </div>
@@ -73,7 +86,7 @@
         <div class="card">
             <span class="icon icon-folder-open services__icon"></span>
             <h3 class="services__title">Web & App Design</h3>
-            <p class="services__text">Lorem ipsum dolor sit amet,                       consectetur adipisicing elit. Consectetur eligendi est
+            <p class="services__text">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Consectetur eligendi est
                 explicabo nam
                 officiis, pariatur quae quo quos sapiente </p>
         </div>
@@ -85,18 +98,21 @@
 <section class="section">
      <div class="container">
          <div class="section__header">
-             <h2 class="section__title">Waxom is Realization of your                    Ideas.</h2>
-             <p class="section__subtitle">Lorem ipsum dolor sit amet,                   consectetur adipisicing elit. Consectetur deserunt eius                     molestiae suscipit! Aperiam assumenda dicta enim itaque
+             <h2 class="section__title">Waxom is Realization of your Ideas.</h2>
+             <p class="section__subtitle">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Consectetur deserunt eius                     molestiae suscipit! Aperiam assumenda dicta enim itaque
              </p>
          </div>
 
          <div class="realization__inner">
-             <div class="realization__img realization__img-center"><img class="browser-center" src="img/realization__browser-center.png" alt="">
+             <div class="browser__image">
+                 <img src="img/realiation__browser.png" alt="" class="br_img">
              </div>
-             <div class="realization__img realization__img-right"><img src="img/realization__browser-right.png"             alt="">
-             </div>
-             <div class="realization__img realization__img-left"><img src="img/realization__browser-left.png"              alt="">
-             </div>
+<!--             <div class="realization__img realization__img-center"><img class="browser-center" src="img/realization__browser-center.png" alt="">-->
+<!--             </div>-->
+<!--             <div class="realization__img realization__img-right"><img src="img/realization__browser-right.png"             alt="">-->
+<!--             </div>-->
+<!--             <div class="realization__img realization__img-left"><img src="img/realization__browser-left.png"              alt="">-->
+<!--             </div>-->
          </div>
      </div>
     <div class="realization__footer">
@@ -114,10 +130,11 @@
 <!--PROJECTS-->
 
 <section class="section projects">
+    <a id="portfolio"></a>
     <div class="container">
         <div class="section__header">
             <h2 class="section__title">Our Latest Projects.</h2>
-            <p class="section__subtitle">Lorem ipsum dolor sit amet,                   consectetur adipisicing elit. Consectetur deserunt eius                     molestiae suscipit! Aperiam assumenda dicta enim itaque
+            <p class="section__subtitle">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Consectetur deserunt eius                     molestiae suscipit! Aperiam assumenda dicta enim itaque
             </p>
         </div>
         <div class="projects__list">
@@ -128,45 +145,256 @@
             <a href="#" class="projects__list-item">Photography</a>
         </div>
         <div class="gallery">
-            <div class="gallery__item">
-                <div class="gallery__item-img"><img class="gallery__photo" src="img/gallery__photo-1.png" alt=""></div>
+            <div class="gallery__item ">
+                <div class="gallery__item-img"><img class="gallery__photo" src="img/gallery__photo-1.png" alt="">
+                    <div class="gallery__icons">
+                        <div class="gallery__icon"><span class=" icon icon-link"></span></div>
+                        <div class="gallery__icon"><span class=" icon icon-search"></span></div>
+                    </div>
+                </div>
+
                 <h3 class="gallery__item-title">Claritas Etiam Processus</h3>
                 <p class="gallery__item-tag">Photography, Nature</p>
             </div>
 
             <div class="gallery__item">
-                <div class="gallery__item-img"><img class="gallery__photo" src="img/gallery__photo-2.png" alt=""></div>
+                <div class="gallery__item-img"><img class="gallery__photo" src="img/gallery__photo-2.png" alt="">
+                    <div class="gallery__icons">
+                        <div class="gallery__icon"><span class=" icon icon-link"></span></div>
+                        <div class="gallery__icon"><span class=" icon icon-search"></span></div>
+                    </div>
+                </div>
                 <h3 class="gallery__item-title">Claritas Etiam Processus</h3>
                 <p class="gallery__item-tag">Photography, Nature</p>
             </div>
 
             <div class="gallery__item">
-                <div class="gallery__item-img"><img class="gallery__photo"src="img/gallery__photo-3.png" alt=""></div>
+                <div class="gallery__item-img"><img class="gallery__photo" src="img/gallery__photo-3.png" alt="">
+                    <div class="gallery__icons">
+                        <div class="gallery__icon"><span class=" icon icon-link"></span></div>
+                        <div class="gallery__icon"><span class=" icon icon-search"></span></div>
+                    </div>
+                </div>
                 <h3 class="gallery__item-title">Claritas Etiam Processus</h3>
                 <p class="gallery__item-tag">Photography, Nature</p>
             </div>
 
             <div class="gallery__item">
-                <div class="gallery__item-img"><img class="gallery__photo"src="img/gallery__photo-4.png" alt=""></div>
+                <div class="gallery__item-img"><img class="gallery__photo" src="img/gallery__photo-4.png" alt="">
+                <div class="gallery__icons">
+                        <div class="gallery__icon"><span class=" icon icon-link"></span></div>
+                        <div class="gallery__icon"><span class=" icon icon-search"></span></div>
+                    </div>
+                </div>
                 <h3 class="gallery__item-title">Claritas Etiam Processus</h3>
                 <p class="gallery__item-tag">Photography, Nature</p>
             </div>
 
             <div class="gallery__item">
-                <div class="gallery__item-img"><img class="gallery__photo" src="img/gallery__photo-5.png" alt=""></div>
+                <div class="gallery__item-img"><img class="gallery__photo" src="img/gallery__photo-5.png" alt="">
+                <div class="gallery__icons">
+                        <div class="gallery__icon"><span class=" icon icon-link"></span></div>
+                        <div class="gallery__icon"><span class=" icon icon-search"></span></div>
+                    </div>
+                </div>
                 <h3 class="gallery__item-title">Claritas Etiam Processus</h3>
                 <p class="gallery__item-tag">Photography, Nature</p>
             </div>
 
             <div class="gallery__item">
-                <div class="gallery__item-img"><img class="gallery__photo" src="img/gallery__photo-6.png" alt=""></div>
+                <div class="gallery__item-img"><img class="gallery__photo" src="img/gallery__photo-6.png" alt="">
+                <div class="gallery__icons">
+                        <div class="gallery__icon"><span class=" icon icon-link"></span></div>
+                        <div class="gallery__icon"><span class=" icon icon-search"></span></div>
+                    </div>
+                </div>
                 <h3 class="gallery__item-title">Claritas Etiam Processus</h3>
                 <p class="gallery__item-tag">Photography, Nature</p>
             </div>
         </div><!--gallery-->
+        <div class="gallery__btn-container"><a href="#" class="gallery__btn">load more</a></div>
     </div><!--container-->
 </section>
 
+<!--VIDEO-->
 
+<section class="section">
+    <div class="video ">
+        <div class="section__header video__text container">
+            <h2 class="section__title">Waxom Video Presentation</h2>
+            <p class="section__subtitle">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Consectetur deserunt eius                     molestiae suscipit! Aperiam assumenda dicta enim itaque
+            </p>
+        </div>
+        <iframe class="video__frame" src="https://www.youtube-nocookie.com/embed/vtkim8vEhwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!--MOBIL-->
+
+<section class="section section__mobil">
+    <a id="features"></a>
+    <div class="container mobil">
+        <div class="mobil__img">
+            <img src="img/iphone_03.jpg" alt="" class="mobil__img-iphone">
+        </div>
+        <div class="mobil__content">
+            <h2 class="mobil__title">Excellent for mobil Devices.</h2>
+            <p class="mobil__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae blanditiis debitis deserunt dolore enim, esse, eveniet exercitationem id illum, ipsa itaque nemo neque praesentium totam veniam vero. Eaque, quia!</p>
+            <ul class="mobil__list">
+                <li class="mobil__list-item"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                <li class="mobil__list-item"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                <li class="mobil__list-item"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                <li class="mobil__list-item"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+            </ul>
+        </div>
+    </div><!--mobil__content-->
+</section>
+
+<!--COUNTERS-->
+
+<section class="section section__counters">
+    <div class="container container__counter">
+        <div class="counter">
+            <span class="incon icon-user counter__icon"></span>
+            <p class="counter__number">3587</p>
+            <p class="counter__name">satisfied clients</p>
+        </div>
+        <div class="counter">
+            <span class="incon icon-coffee counter__icon"></span>
+            <p class="counter__number">207</p>
+            <p class="counter__name">cups of coffee</p>
+        </div>
+        <div class="counter">
+            <span class="incon icon-message counter__icon"></span>
+            <p class="counter__number">2500</p>
+            <p class="counter__name">blog posts</p>
+        </div>
+        <div class="counter">
+            <span class="incon icon-heart counter__icon"></span>
+            <p class="counter__number">873</p>
+            <p class="counter__name">likes</p>
+        </div>
+        <div class="counter">
+            <span class="incon icon-eject counter__icon"></span>
+            <p class="counter__number">900</p>
+            <p class="counter__name">we launched</p>
+        </div>
+    </div><!--container container__counter-->
+</section>
+
+<!--POSTS-->
+
+<section class="section section__posts">
+    <a id="blog"></a>
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">Recent Posts.</h2>
+            <p class="section__subtitle">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Consectetur deserunt eius                     molestiae suscipit! Aperiam assumenda dicta enim itaque
+            </p>
+        </div>
+        <div class="post__list">
+            <div class="post">
+                <div class="post__bg"><img src="img/post__1.png" alt="" class="post__img">
+                <div class="post__date">30 <span class="post__date-month">Sep.</span></div>
+                </div>
+                <div class="post__inner">
+                    <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+                    <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores aspernatur consequatur, consequuntur culpa</p>
+                    <a href="#" class="post__btn">Read more</a>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post__bg"><img src="img/post__2.png" alt="" class="post__img">
+                    <div class="post__date">30 <span class="post__date-month">Sep.</span></div>
+                </div>
+                <div class="post__inner">
+                    <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+                    <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores aspernatur consequatur, consequuntur culpa</p>
+                    <a href="#" class="post__btn">Read more</a>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post__bg"><img src="img/post__3.png" alt="" class="post__img">
+                    <div class="post__date">30 <span class="post__date-month">Sep.</span></div>
+                </div>
+                <div class="post__inner">
+                    <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+                    <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores aspernatur consequatur, consequuntur culpa</p>
+                    <a href="#" class="post__btn">Read more</a>
+                </div>
+            </div>
+        </div><!--post__list-->
+    </div><!--container-->
+</section>
+
+<!--PARTNERS-->
+
+<section class="section section__partners">
+    <div class="container parnters__list">
+        <div class="parnter__logo"><a href="#"><img class="parnter__logo-img" src="img/partner__logo-01.png" alt=""></a></div>
+        <div class="parnter__logo"><a href="#"><img class="parnter__logo-img" src="img/partner__logo-02.png" alt=""></a></div>
+        <div class="parnter__logo"><a href="#"><img class="parnter__logo-img" src="img/partner__logo-03.png" alt=""></a></div>
+        <div class="parnter__logo"><a href="#"><img class="parnter__logo-img" src="img/partner__logo-04.png" alt=""></a></div>
+    </div>
+</section>
+
+.<!--FOOTER-->
+
+<footer class="footer">
+    <a id="contact"></a>
+    <div class="container blocks__list">
+        <div class="block">
+            <div class="footer__logo"><img class="footer__logo-img" src="img/logo.png" alt=""></div>
+            <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid explicabo nihil numquam obcaecati repellat repellendus, sequi? Debitis eaque fugiat incidunt obcaecati, perspiciatis veniam</p>
+            <a href="" class="footer__btn">Read More</a>
+        </div>
+        <div class="block">
+            <h3 class="block__title">Recent Posts</h3>
+            <div class="footer__to__post">
+                <span class="footer__post__data">September 08, 2015</span>
+                <a href="#" class="to__post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, blanditiis culpa deleniti dolore eos esse</a>
+            </div>
+
+            <div class="footer__to__post">
+                <span class="footer__post__data">September 08, 2015</span>
+                <a href="#" class="to__post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, blanditiis culpa deleniti dolore eos esse</a>
+        </div>
+            <div class="footer__to__post">
+                <span class="footer__post__data">September 08, 2015</span>
+                <a href="#" class="to__post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, blanditiis culpa deleniti dolore eos esse</a>
+            </div>
+        </div>
+                        <!-- TWITTER-->
+        <div class="block">
+            <h3 class="block__title">Our Twitter</h3>
+            <div class="footer__to__post">
+                <a href="#" class="to__twit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, blanditiis culpa deleniti dolore eos esse</a>
+                <span class="footer__twit__data">5 mins ago</span>
+            </div>
+
+            <div class="footer__to__post">
+                <a href="#" class="to__twit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, blanditiis culpa deleniti dolore eos esse</a>
+                <span class="footer__twit__data">3 hour ago</span>
+            </div>
+            <div class="footer__to__post">
+                <a href="#" class="to__twit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, blanditiis culpa deleniti dolore eos esse</a>
+                <span class="footer__twit__data">7 days ago</span>
+            </div>
+        </div>
+                            <!-- DRIBBBLE-->
+        <div class="block block__dribble">
+            <h3 class="block__title">Dribbble Widget</h3>
+            <div class="dribbble__img"><a href="#"><img src="img/dibbble__img_1.png" alt=""></a></div>
+            <div class="dribbble__img"><a href="#"><img src="img/dibbble__img_2.png" alt=""></a></div>
+            <div class="dribbble__img"><a href="#"><img src="img/dibbble__img_3.png" alt=""></a></div>
+            <div class="dribbble__img"><a href="#"><img src="img/dibbble__img_4.png" alt=""></a></div>
+        </div>
+    </div> <!--container blocks__list-->
+</footer>
+
+<script src="JS/slider.js"></script>
+<script src="JS/active_links.js"></script>
+<script src="JS/script.js"></script>
+<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
 </body>
 </html>
